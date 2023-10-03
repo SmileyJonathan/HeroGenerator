@@ -1,11 +1,11 @@
-package entity;
+package entity.main;
 public class Super {
 
     private String name;
-    private String gender;
+    private char gender;
     private String sexuality;
     private String type;
-    private int height;
+    private String height;
     private int weight;
     private String hairType;
     private String hairColor;
@@ -17,13 +17,13 @@ public class Super {
 
     public String getName() {return name;}
 
-    public String getGender() {return gender;}
+    public char getGender() {return gender;}
 
     public String getSexuality() { return sexuality; }
 
     public String getType() { return type; }
 
-    public int getHeight() { return height;}
+    public String getHeight() { return height;}
 
     public int getWeight() {  return weight; }
 
@@ -43,13 +43,13 @@ public class Super {
 
     public void setName(String name) { this.name = name;}
 
-    public void setGender(String gender) { this.gender = gender; }
+    public void setGender(char gender) { this.gender = gender; }
 
     public void setSexuality(String sexuality) { this.sexuality = sexuality; }
 
     public void setType(String type) {  this.type = type; }
 
-    public void setHeight(int height) {this.height = height; }
+    public void setHeight(String height) {this.height = height; }
 
     public void setWeight(int weight) {this.weight = weight; }
 
@@ -70,10 +70,10 @@ public class Super {
 
     public Super () {
         name = "Unknown";
-        gender = "Unknown";
+        gender = 'U';
         sexuality = "Unknown";
         type = "Unknown";
-        height = 0;
+        height = "Unknown";
         weight = 0;
         hairType = "Unknown";
         hairColor = "Unknown";
@@ -84,7 +84,7 @@ public class Super {
         ability = "Unknown";
     }
 
-    public Super (String n, String g, String s, String tY, int h, int w, String hT, String hC, String na, String e, String sC, String eC) {
+    public Super (String n, char g, String s, String tY, String h, int w, String hT, String hC, String na, String e, String sC, String eC) {
         name = n;
         gender = g;
         sexuality = s;
